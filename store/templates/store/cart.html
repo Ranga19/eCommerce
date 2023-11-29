@@ -1,0 +1,22 @@
+{% extends 'store/main.html' %}
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="box-element">
+            <a href="{% url 'store' %}" class="btn btn-outline-secondary">Continue Shopping</a>
+            <hr>
+            <table class="table">
+                <tr>
+                    <th><h4>Items:</h4><strong>1</strong></th>
+                    <th><h4>Total:</h4><strong>454</strong></th>
+                    <th>
+                        <a href="{% url 'checkout' %}" class="btn btn-success" style="float: right;">Checkout</a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
